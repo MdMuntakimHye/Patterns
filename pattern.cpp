@@ -76,11 +76,11 @@ void pattern4(int n){
     }
 }
 void pattern5(int n){
-        //   1
-        //   22
-        //   333
-        //   4444
-        //   55555
+        //   *****
+        //   ****
+        //   ***
+        //   **
+        //   *
     
     for (int i = 0; i < n; i++)
     {
@@ -89,7 +89,6 @@ void pattern5(int n){
             cout << "*";
         }
         cout << endl;
-        
     }
     for (int i = 0; i < n; i++)
     {
