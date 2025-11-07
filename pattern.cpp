@@ -143,10 +143,33 @@ void pattern7(int n){
         
     }
 }
-
+void pattern8(int n){
+        //   *********
+        //    *******
+        //     *****
+        //      ***
+        //       *
+    
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 1; j <=i; j++)
+        {
+            cout <<  " ";
+        }
+        for(int j=1;j<=2*n-(2*i+1);j++){
+            cout << "*";
+        }
+        for (int j = 1; j <=i ; j++)
+        {
+            cout <<  " ";
+        }
+        cout << endl;
+        
+    }
+}
 int main(){
 
     int n;
-    pattern7(5);
+    pattern8(5);
     return 0;
 }
