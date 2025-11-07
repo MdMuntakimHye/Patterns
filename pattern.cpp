@@ -75,10 +75,35 @@ void pattern4(int n){
         
     }
 }
-
+void pattern5(int n){
+        //   1
+        //   22
+        //   333
+        //   4444
+        //   55555
+    
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = n; j > i ; j--)
+        {
+            cout << "*";
+        }
+        cout << endl;
+        
+    }
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= n-i-1 ; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+        
+    }
+}
 int main(){
 
     int n;
-    pattern4(5);
+    pattern5(5);
     return 0;
 }
