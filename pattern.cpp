@@ -249,14 +249,21 @@ void pattern11(int n){
     
 }            
 void pattern12(int n){
+
+        //   1        1
+        //   12      21
+        //   123    321
+        //   1234  4321
+        //   1234554321
+
     for (int i = 1; i <= n; i++)
     {
         for(int j=1;j<=i;j++){
             cout << j;
         }
-        for (int j = 0; j < 2*n-(2*i-1); j++)
+        for (int j = 1; j < 2*n-(2*i-1); j++)
         {
-            cout << "|";
+            cout << " ";
         }
         // for (int j = i; j >= 1; j--)
         // {
@@ -272,6 +279,12 @@ void pattern12(int n){
     
 }           
 void pattern13(int n){
+        //   1 
+        //   2 3
+        //   4 5 6
+        //   7 8 9 10
+        //   11 12 13 14 15          
+
     int start = 1;
     for(int i=0;i<n;i++){
         for(int j=0;j<=i;j++){
