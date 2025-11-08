@@ -223,7 +223,31 @@ void pattern10(int n){
     }
     
 }    
-             
+void pattern11(int n){
+            // 1
+            // 01
+            // 101
+            // 0101
+            // 10101
+
+    int start = 1;
+    for (int i = 0; i < n; i++)
+    {
+        if (i%2==0) // if the row number is even it'll start with 1
+        {
+            start =1 ;
+        }
+        else start = 0;// row number is odd. so it'll start with 0;
+        for (int j = 0; j <= i; j++)
+        {
+            cout << start;
+            start = 1 - start;
+        }
+        cout << endl;
+            
+    }
+    
+}            
             
         
     
@@ -231,6 +255,6 @@ void pattern10(int n){
 int main(){
 
     int n;
-    pattern10(5);
+    pattern11(5);
     return 0;
 }
