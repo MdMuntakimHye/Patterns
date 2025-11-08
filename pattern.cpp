@@ -248,13 +248,35 @@ void pattern11(int n){
     }
     
 }            
+void pattern12(int n){
+    for (int i = 1; i <= n; i++)
+    {
+        for(int j=1;j<=i;j++){
+            cout << j;
+        }
+        for (int j = 0; j < 2*n-(2*i-1); j++)
+        {
+            cout << "|";
+        }
+        // for (int j = i; j >= 1; j--)
+        // {
+        //     cout << j;
             
+        // }
+        for(int j=1;j<=i;j++){
+            cout << (i-j+1);
+        }
+        
+        cout << endl;
+    }
+    
+}           
         
     
 
 int main(){
 
     int n;
-    pattern11(5);
+    pattern12(5);
     return 0;
 }
