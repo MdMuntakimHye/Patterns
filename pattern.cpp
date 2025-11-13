@@ -20,7 +20,6 @@ void pattern1(int n){
         cout << endl;
         
     }
-    
 }
 void pattern2(int n){
             // *
@@ -102,10 +101,10 @@ void pattern5(int n){
 }
 void pattern6(int n){
         //   1 2 3 4 5 
-        //   1 2 3 4
-        //   1 2 3
-        //   1 2
-        //   1
+        //   1 2 3 4 
+        //   1 2 3 
+        //   1 2 
+        //   1 
     
     
     for (int i = 0; i < n; i++)
@@ -468,10 +467,52 @@ void pattern20(int n){
         else spaces +=2;
     }    
 }
+void pattern21(int n){
+// *****
+// *   *
+// *   *
+// *   *
+// *****
+    for(int i=1;i<=n;i++){
+        for (int j = 1; j <= n; j++)
+        {
+            if(i==1 || j==1 || i==n || j==n){
+                cout << "*";
+            }
+            else cout << " ";
+        }
+        cout << endl;
+        
+        
+    }
+}
+void pattern22(int n){
+        //   555555555
+        //   544444445
+        //   543333345
+        //   543222345
+        //   543212345
+        //   543222345
+        //   543333345
+        //   544444445
+        //   555555555
+    for(int i=0;i<2*n-1;i++){
+        for(int j=0;j<2*n-1;j++){
+            int top = i;
+            int left = j;
+            int right = (2*n-1)-1-j;
+            int down = (2*n-1)-1-i;
+
+            cout << (n-min(min(top,down),min(left,right)));
+        }
+        cout << endl;
+
+    }
+}
 
 int main(){
 
     int n;
-    pattern16(5);
+    pattern22(5);
     return 0;
 }
