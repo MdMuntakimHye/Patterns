@@ -33,3 +33,31 @@ const cities2 = ["London", "Liverpool", "Totnes", "Edinburgh"];
 const longer = cities2.filter(isLong);
 console.log(longer);
 
+//string to array
+const data = "Manchester,London,Liverpool,Birmingham,Leeds,Carlisle";
+
+const cities3 = data.split(",");
+console.log(cities3);
+const name = "rashik";
+const letters = name.split("");
+console.log(letters);
+console.log(cities3.length);
+console.log(cities3.length -1);
+const animals = [
+  "Tiger",
+  "Elephant",
+  "Kangaroo",
+  "Penguin",
+  "Dolphin",
+  "Giraffe",
+  "Wolf",
+  "Panda"
+];
+//const animalsName = animals.join(",");
+//we can specify different separators when using join
+const animalsNameWithPlus = animals.join("*");
+console.log(animalsNameWithPlus);
+//we can also use toString() method . but it comes with a caveat. With join() you can specify different separators, whereas toString() always uses a comma.
+const dogNames = ["Rocket", "Flash", "Bella", "Slugger"];
+//dogNames.toString(); // Rocket,Flash,Bella,Slugger
+console.log(dogNames.toString());
