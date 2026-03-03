@@ -61,3 +61,26 @@ console.log(animalsNameWithPlus);
 const dogNames = ["Rocket", "Flash", "Bella", "Slugger"];
 //dogNames.toString(); // Rocket,Flash,Bella,Slugger
 console.log(dogNames.toString());
+
+const products = [
+  "Underpants:6.99",
+  "Socks:5.99",
+  "T-shirt:14.99",
+  "Trousers:31.99",
+  "Shoes:23.99",
+];
+
+for (const product of products) {
+  const subArray = product.split(":");
+  const name = subArray[0];
+  const price = Number(subArray[1]);
+  total += price;
+  const itemText = `${name} — $${price}`;
+
+  //const listItem = document.createElement("li");
+  //listItem.textContent = itemText;
+  //list.appendChild(listItem);
+}
+
+//totalBox.textContent = `Total: $${total.toFixed(2)}`;
+console.log(subArray);
