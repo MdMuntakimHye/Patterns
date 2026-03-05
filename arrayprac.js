@@ -25,4 +25,23 @@ function birdsWithE(birds) {
 }
 
 const eBirds = birds.filter(birdsWithE);
-console.log(startsWithE);
+//console.log(startsWithE);
+const products = [
+  "Underpants:6.99",
+  "Socks:5.99",
+  "T-shirt:14.99",
+  "Trousers:31.99",
+  "Shoes:23.99",
+];
+
+for (const product of products){
+  const subArray = product.split(":");
+  console.log(subArray);
+}
+const myArray3 = ["cats", "dogs", "chickens"];
+
+myArray3[0] = "horses";
+myArray3[1] = "pigs";
+
+myArray3.unshift("crocodiles");
+console.log(myArray3);
